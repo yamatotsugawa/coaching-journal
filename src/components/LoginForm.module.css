@@ -1,0 +1,97 @@
+/* src/components/LoginForm.module.css */
+
+.loginFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh; /* 画面中央に配置するため */
+  padding: 20px;
+  background-color: #f0f2f5; /* 背景色 */
+  font-family: sans-serif;
+}
+
+.loginFormContainer h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.form div {
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.2);
+}
+
+.error {
+  color: #e53e3e; /* 赤系のエラー色 */
+  margin-top: -10px; /* 少し上に詰める */
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #0070f3; /* 青系のボタン色 */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submitButton:hover {
+  background-color: #005bb5;
+}
+
+.signupLink {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.95em;
+  color: #666;
+}
+
+.signupLink a {
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signupLink a:hover {
+  text-decoration: underline;
+}
